@@ -1,0 +1,368 @@
+<html>
+<head>
+<title>Jogo da Velha</title>
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<script type= "text/javascript">
+
+</script>
+
+</head>
+<body>
+<center><h1>Jogo da Velha</h1></center><hr />
+<div class="imagem"> <!-- imagem-->  </div><br /><br />
+
+<div class="menu">
+          <ul>
+		        <li><a href="#">Home</a></li>
+				<li><a href="#">Mais Jogos</a></li>
+				<li><a href="#">Portifolio</a></li>
+				<li><a href="#">Contato</a></li>
+				<li><a href="#">Sobre</a></li>
+				 
+		  </ul>
+        </div>
+		
+<div class="jogo">
+<center><table>
+<tr>
+    <td><input type="button" class="button" name="btn1" id="btn1" value=""
+></td>
+	<td><input type="button" class="button" name="btn2" id="btn2" value=""
+></td>	
+	<td><input type="button" class="button" name="btn3" id="btn3" value=""
+></td>
+</tr>
+<tr>	
+	<td><input type="button" class="button" name="btn4" id="btn4" value=""
+></td>	
+	<td><input type="button" class="button" name="btn5" id="btn5" value=""
+></td>	
+	<td><input type="button" class="button" name="btn6" id="btn6" value=""
+></td>	
+</tr>
+<tr>
+	<td><input type="button" class="button" name="btn7" id="btn7" value=""
+></td>	
+	<td><input type="button" class="button" name="btn8" id="btn8" value=""
+></td>	
+	<td><input type="button" class="button" name="btn9" id="btn9" value=""
+></td>
+</tr>
+
+</table>
+</center>
+
+    <center>  <td><input type="button" name="Novo" id="Novo" value="Novo 
+Jogo" style="width: 100px; height: 20px"></td> </center>
+</div>
+
+    <br />
+
+	<center><div class="nomes">
+	<label>Nome Jogador 1:</label>
+	<input id="jg1" type="text"/>
+	<label>Nome Jogador 2:</label>
+	<input id="jg2" type="text"/><br />
+	<input type="button" name="jogadores" id="jogadores"value="Confirmar"   />
+	</center></div>
+	
+</body>
+</html>		
+
+<script type= "text/javascript">
+
+document.getElementById('jogadores').onclick = function()
+  {   
+    var jogador1 = document.getElementById("jg1").value;
+    var jogador2 = document.getElementById("jg2").value;
+    alert(jogador1 + " Inicia a partida!" );
+  }
+
+var i = 0;
+document.getElementById('btn1').onclick = function()
+{ 
+  if(i==0)
+  {
+  document.getElementById('btn1').value = 'X';
+  btn1.disabled = "disabled";
+  i = 1;
+  }
+  else
+  {
+  document.getElementById('btn1').value = 'O';
+  btn1.disabled = "disabled";
+  i = 0;
+  }
+ 
+ Verificar();
+ 
+}
+
+document.getElementById('btn2').onclick = function()
+{
+  if (i==0)
+  {
+  btn2.disabled = "disabled";
+  document.getElementById('btn2').value = 'X';
+  i = 1;
+  }
+  else
+  {
+  document.getElementById('btn2').value = 'O';
+   btn2.disabled = "disabled";
+  i = 0;
+  }
+   Verificar();
+}
+
+document.getElementById('btn3').onclick = function()
+{
+  if (i==0)
+  {
+  document.getElementById('btn3').value = 'X';
+  btn3.disabled = "disabled";
+  i = 1;
+  }
+  else
+  {
+  document.getElementById('btn3').value = 'O';
+   btn3.disabled = "disabled";
+  i = 0;
+  }
+   Verificar();
+}
+
+document.getElementById('btn4').onclick = function()
+{
+  if (i==0)
+  {
+  document.getElementById('btn4').value = 'X';
+   btn4.disabled = "disabled";
+  i = 1;
+  }
+  else
+  {
+  document.getElementById('btn4').value = 'O';
+   btn4.disabled = "disabled";
+  i = 0;
+  }
+   Verificar();
+}
+
+document.getElementById('btn5').onclick = function()
+{
+  if (i==0)
+  {
+  document.getElementById('btn5').value = 'X';
+    btn5.disabled = "disabled";
+  i = 1;
+  }
+  else
+  {
+  document.getElementById('btn5').value = 'O';
+    btn5.disabled = "disabled";
+  i = 0;
+  }
+   Verificar();
+}
+
+document.getElementById('btn6').onclick = function()
+{
+  if (i==0)
+  {
+  document.getElementById('btn6').value = 'X';
+    btn6.disabled = "disabled";
+  i = 1;
+  }
+  else
+  {
+  document.getElementById('btn6').value = 'O';
+    btn6.disabled = "disabled";
+  i = 0;
+  }
+   Verificar();
+}
+
+document.getElementById('btn7').onclick = function()
+{
+  if (i==0)
+  {
+  document.getElementById('btn7').value = 'X';
+    btn7.disabled = "disabled";
+  i = 1;
+  }
+  else
+  {
+  document.getElementById('btn7').value = 'O';
+    btn7.disabled = "disabled";
+  i = 0;
+  }
+   Verificar();
+}
+
+document.getElementById('btn8').onclick = function()
+{
+  if (i==0)
+  {
+  document.getElementById('btn8').value = 'X';
+    btn8.disabled = "disabled";
+  i = 1;
+  }
+  else
+  {
+  document.getElementById('btn8').value = 'O';
+    btn8.disabled = "disabled";
+  i = 0;
+  }
+   Verificar();
+}
+
+document.getElementById('btn9').onclick = function()
+{
+  if (i==0)
+  {
+  document.getElementById('btn9').value = 'X';
+    btn9.disabled = "disabled";
+  i = 1;
+  }
+  else
+  {
+  document.getElementById('btn9').value = 'O';
+    btn9.disabled = "disabled";
+  i = 0;
+  }
+   Verificar();
+}
+
+ function Verificar()
+ {
+     if(document.getElementById('btn1').value == 'X' && document.getElementById('btn2').value == 'X' && document.getElementById('btn3').value == 'X')
+     {
+	 btn4.disabled = "disabled";
+	 btn5.disabled = "disabled";
+	 btn6.disabled = "disabled";
+	 btn7.disabled = "disabled";
+	 btn8.disabled = "disabled";
+	 btn9.disabled = "disabled";
+	 
+     alert ("Jogador 1 Ganhou!");
+	  
+     }
+	 if(document.getElementById('btn1').value == 'O' && document.getElementById('btn2').value == 'O' && document.getElementById('btn3').value == 'O')
+	 {
+	 btn4.disabled = "disabled";
+	 btn5.disabled = "disabled";
+	 btn6.disabled = "disabled";
+	 btn7.disabled = "disabled";
+	 btn8.disabled = "disabled";
+	 btn9.disabled = "disabled";
+     alert ("Jogador 2 Ganhou!");
+	   
+	 }
+	 
+     if(document.getElementById('btn4').value == 'X' && document.getElementById('btn5').value == 'X' && document.getElementById('btn6').value == 'X')
+     {
+	 btn1.disabled = "disabled";
+	 btn2.disabled = "disabled";
+	 btn3.disabled = "disabled";
+	 btn7.disabled = "disabled";
+	 btn8.disabled = "disabled";
+	 btn9.disabled = "disabled";
+     alert ("Jogador 1 Ganhou!"); 
+     }
+	 if(document.getElementById('btn4').value == 'O' && document.getElementById('btn5').value == 'O' && document.getElementById('btn6').value == 'O')
+	 {
+	  alert ("Jogador 2 Ganhou!"); 
+	 }
+	 
+	 
+	 if(document.getElementById('btn7').value == 'X' && document.getElementById('btn8').value == 'X' && document.getElementById('btn9').value == 'X')
+     {
+     alert ("Jogador 1 Ganhou!");
+     }
+	 if(document.getElementById('btn7').value == 'O' && document.getElementById('btn8').value == 'O' && document.getElementById('btn9').value == 'O')
+	 {
+	  alert ("Jogador 2 Ganhou!");
+	 }
+	 
+	 if(document.getElementById('btn1').value == 'X' && document.getElementById('btn5').value == 'X' && document.getElementById('btn9').value == 'X')
+     {
+     alert ("Jogador 1 Ganhou!");
+     }
+	 if(document.getElementById('btn1').value == 'O' && document.getElementById('btn5').value == 'O' && document.getElementById('btn9').value == 'O')
+	 {
+	  alert ("Jogador 2 Ganhou!");
+	 }
+	 
+	 if(document.getElementById('btn3').value == 'X' && document.getElementById('btn5').value == 'X' && document.getElementById('btn7').value == 'X')
+     {
+     alert ("Jogador 1 Ganhou!");
+     }
+	 if(document.getElementById('btn3').value == 'O' && document.getElementById('btn5').value == 'O' && document.getElementById('btn7').value == 'O')
+	 {
+	  alert ("Jogador 2 Ganhou!");
+	 }
+	 
+	 if(document.getElementById('btn1').value == 'X' && document.getElementById('btn4').value == 'X' && document.getElementById('btn7').value == 'X')
+     {
+     alert ("Jogador 1 Ganhou!");
+     }
+	 if(document.getElementById('btn1').value == 'O' && document.getElementById('btn4').value == 'O' && document.getElementById('btn7').value == 'O')
+	 {
+	  alert ("Jogador 2 Ganhou!");
+	 }
+	 
+	 if(document.getElementById('btn2').value == 'X' && document.getElementById('btn5').value == 'X' && document.getElementById('btn8').value == 'X')
+     {
+     alert ("Jogador 1 Ganhou!");
+     }
+	 if(document.getElementById('btn2').value == 'O' && document.getElementById('btn5').value == 'O' && document.getElementById('btn8').value == 'O')
+	 {
+	  alert ("Jogador 2 Ganhou!");
+	 }
+	 
+	 if(document.getElementById('btn3').value == 'X' && document.getElementById('btn6').value == 'X' && document.getElementById('btn9').value == 'X')
+     {
+     alert ("Jogador 1 Ganhou!");
+     }
+	 if(document.getElementById('btn3').value == 'O' && document.getElementById('btn6').value == 'O' && document.getElementById('btn9').value == 'O')
+	 {
+	  alert ("Jogador 2 Ganhou!");
+	 }
+	 
+	document.getElementById('Novo').onclick = function()
+	{
+	Novo();
+	}
+	  function Novo()
+    {
+     i = 0;
+    document.getElementById('btn1').value = ' ';
+	document.getElementById('btn1').disabled=false;
+	document.getElementById('btn2').value = ' ';
+	document.getElementById('btn2').disabled=false;
+	document.getElementById('btn3').value = ' ';
+	document.getElementById('btn3').disabled=false;
+	document.getElementById('btn4').value = ' ';
+	document.getElementById('btn4').disabled=false;
+	document.getElementById('btn5').value = ' ';
+	document.getElementById('btn5').disabled=false;
+	document.getElementById('btn6').value = ' ';
+	document.getElementById('btn6').disabled=false;
+	document.getElementById('btn7').value = ' ';
+	document.getElementById('btn7').disabled=false;
+	document.getElementById('btn8').value = ' ';
+	document.getElementById('btn8').disabled=false;
+	document.getElementById('btn9').value = ' ';
+	document.getElementById('btn9').disabled=false;
+
+	
+   }
+     
+	 
+	
+	
+	 
+ }
+
+</script>
